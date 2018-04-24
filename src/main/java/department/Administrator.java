@@ -5,7 +5,7 @@ public class Administrator {
         if(DutyMan.fireOrNot())
             System.out.println("There is fire");
         else
-            sendCrew();
+            System.out.println("There is no fire");
     }
 
     private void sendCrew(){
