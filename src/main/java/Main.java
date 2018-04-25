@@ -1,25 +1,12 @@
-import department.Administrator;
-import department.FireMan;
-
-import java.beans.IntrospectionException;
+import department.Admin;
+import department.Fireman;
+import department.Message;
 
 public class Main{
     public static void main(String[] args) {
-        new Administrator().callToDutyMan();
-
-        FireMan f1 = new FireMan();
-        FireMan f2 = new FireMan();
-        FireMan f3 = new FireMan();
-
-        try{
-            f1.t.join();
-            f2.t.join();
-            f3.t.join();
-        } catch (InterruptedException e){
-            e.getStackTrace();
-        }
-        System.out.println("DONE");
-
+        Message message = new Message("Signal");
+        new Thread(new Fireman(message)).start();
+        new Thread(new Admin(message)).start();
     }
 }
 
