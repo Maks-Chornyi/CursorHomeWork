@@ -21,36 +21,7 @@ public class Main{
 
 
 
-//public class Main{
-//    public static void main(String[] args) {
-//
-//        Thread t = new Thread(new NewThread());
-//        t.start();
-//        System.out.println(Thread.currentThread().getName());
-//        try {
-//            t.wait();
-//            Thread.sleep(1500);
-//            t.notify();
-//        } catch (InterruptedException e){
-//            e.getStackTrace();
-//        }
-//
-//        try {
-//            Thread.sleep(1000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-//        System.out.println(Thread.currentThread().getName()+" ended");
-//    }
-//}
-//
-//class NewThread implements Runnable{
-//
-//    public void run(){
-//        System.out.println("This is "+Thread.currentThread().getName());
-//
-//    }
-//}
+
 
 
 

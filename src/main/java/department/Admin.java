@@ -7,7 +7,7 @@ import java.util.Random;
 public class Admin implements Runnable {
     private final Message message;
 
-    //@Override
+    @Override
     public void run() {
 
         System.out.println(Thread.currentThread().getName() + " is waiting");
